@@ -1,0 +1,51 @@
+body {
+
+    background-color: aqua;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.box {
+
+    background-color: aquamarine;
+    width: auto;
+    height: 600px;
+    border: 2px solid red;
+    display: grid;
+    grid-template-areas: "menue topo menud "
+        "menue cont menud";
+
+    grid-template-rows: 25% 50% 25%;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.topo {
+
+    grid-area: topo;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.cont {
+
+    grid-area: cont;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.menue {
+
+    grid-area: menue;
+    background-color: blueviolet;
+
+}
+
+.menud {
+
+    grid-area: menud;
+    background-color: rgb(133, 64, 64);
+
+}
